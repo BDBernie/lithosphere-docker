@@ -5,5 +5,7 @@ services:
     build: .
     ports:
       - '5222:5222'
+#      - '8181:8181'
     environment:
-      JAVA_OPTS: -Xdebug -Xmx256m -Xms256m -Xrunjdwp:server=y,transport=dt_socket,address=8181,suspend=n
+      JAVA_OPTS: -Xmx512m -Xms256m
+#      JAVA_OPTS: -Xmx512m -Xms256m -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8181,suspend=n
