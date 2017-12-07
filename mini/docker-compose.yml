@@ -1,0 +1,9 @@
+version: '2'
+services:
+  granite-mini-server:
+    container_name: granite-mini-server
+    build: .
+    ports:
+      - '5222:5222'
+    environment:
+      JAVA_OPTS: -Xdebug -Xmx256m -Xms256m -Xrunjdwp:server=y,transport=dt_socket,address=8181,suspend=n
