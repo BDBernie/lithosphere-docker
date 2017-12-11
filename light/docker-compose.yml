@@ -1,7 +1,7 @@
 version: '2'
 services:
-  granite-mini-server:
-    container_name: granite-mini-server
+  granite-light-server:
+    container_name: granite-light-server
     build: .
     ports:
       - '5222:5222'
