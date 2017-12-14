@@ -5,21 +5,21 @@
 构建Docker Image
 
 ```
-cd light
-docker build --no-cache -f Dockerfile -t lithosphere/granite:light --rm=true .
+cd lite
+docker build --no-cache -f Dockerfile -t lithosphere/granite:lite --rm=true .
 docker push
 ```
 
 启动方式: docker
 
 ```
-docker run -d -p 5222:5222 --name light-granite-server lithosphere/granite:light
+docker run -d -p 5222:5222 --name lite-granite-server lithosphere/granite:lite
 ```
 
 启动方式: docker-compose
 
 ```
-cd light
+cd lite
 docker-compose up --build
 ```
 
